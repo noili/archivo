@@ -22,6 +22,10 @@ class OfficesController < ApplicationController
     @offices = Office.all
   end
   
+  def edit
+    @office = Office.find(params[:id])
+  end
+  
   def update
     @office = Office.find params[:id]
  
