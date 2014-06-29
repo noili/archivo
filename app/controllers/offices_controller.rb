@@ -5,7 +5,7 @@ class OfficesController < ApplicationController
   end
 
   def create
-    @office = Office.new(office_params)
+    @office = Office.new office_params
 
     if @office.save
       redirect_to @office
@@ -15,7 +15,7 @@ class OfficesController < ApplicationController
   end
   
   def show
-    @office = Office.find(params[:id])
+    @office = Office.find params[:id]
   end
   
   def index
@@ -23,13 +23,20 @@ class OfficesController < ApplicationController
   end
   
   def update
-    @office = Office.find(params[:id])
+    @office = Office.find params[:id]
  
-    if @office.update(office_params)
+    if @office.update office_params
       redirect_to @office
     else
       render 'edit'
     end    
+  end
+  
+  def destroy
+    @office = Office.find params[:id]
+    @office.destroy
+    
+    redirect_to offices_path
   end
   
   private
