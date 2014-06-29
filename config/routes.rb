@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  get 'offices/index'
+  
   get 'welcome/index'
+  
   root 'welcome#index'
   
   resources :offices
