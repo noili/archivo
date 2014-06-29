@@ -1,6 +1,7 @@
 class OfficesController < ApplicationController
 
   def new
+    @office = Office.new
   end
 
   def create
@@ -15,6 +16,20 @@ class OfficesController < ApplicationController
   
   def show
     @office = Office.find(params[:id])
+  end
+  
+  def index
+    @offices = Office.all
+  end
+  
+  def update
+    @office = Office.find(params[:id])
+ 
+    if @office.update(office_params)
+      redirect_to @office
+    else
+      render 'edit'
+    end    
   end
   
   private
