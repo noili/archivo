@@ -1,7 +1,7 @@
 archivo
 =======
 
-TODO:
+
 
 Hacer el CRUD para person, office, step, Record
 
@@ -25,6 +25,8 @@ Step
 belongs_to :office
 belongs_to :person
 belongs_to :office
+
+###TODO:
 
 Casos de Uso
 
