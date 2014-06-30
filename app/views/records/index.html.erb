@@ -1,0 +1,20 @@
+<h1>Listing records</h1>
+ 
+<table>
+  <tr>
+    <th>Record</th>
+  </tr>
+ 
+  <% @records.each do |record| %>
+    <tr>
+      <td><%= record.id %></td>
+      <td><%= link_to 'Show', record_path(record) %></td>
+      <td><%= link_to 'Edit', edit_record_path(record) %></td>
+      <td><%= button_to 'Destroy', record_path(record),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>
+
+

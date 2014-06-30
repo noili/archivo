@@ -7,8 +7,11 @@ Rails.application.routes.draw do
   
   get 'people/index'
   
+  get 'records/index'
+  
   resources :offices
   resources :people
+  resources :records
   #get 'offices/index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
