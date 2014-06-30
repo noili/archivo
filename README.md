@@ -25,3 +25,14 @@ Step
 belongs_to :office
 belongs_to :person
 belongs_to :office
+
+Casos de Uso
+
+Mover un expediente
+
+-busco un determinado expediente
+-selecciono otra oficina
+-el expediente se movio
+
+select o combo box
+submit
