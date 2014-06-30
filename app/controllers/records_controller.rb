@@ -6,7 +6,10 @@ class RecordsController < ApplicationController
 
   def create
     @record = Record.new record_params
-
+    #@office = Office.where name: "Mesa de Entrada"
+    @step = Step.new
+    @step = Ste
+    
     if @record.save
       redirect_to @record
     else
@@ -46,7 +49,7 @@ class RecordsController < ApplicationController
   private
 
     def record_params
-      #params.require(:record).permit(:id)
+      params.require(:record).permit(:titulo)
     end
 
 end
