@@ -19,6 +19,7 @@ class FileRecordsController < ApplicationController
 
   def show
     @file_record = FileRecord.find(params[:id])
+    @step = Step.new
   end
 
   def index

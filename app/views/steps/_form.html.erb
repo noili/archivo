@@ -1,0 +1,31 @@
+<%= form_for @step do |f| %>
+ 
+  <% if @step.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@step.errors.count, "error") %> prohibited
+        this office from being saved:
+      </h2>
+      <ul>
+        <% @step.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <%= f.select(:office_id) do %>
+    <% Office.all.each do |office| %>
+      <%= content_tag(:option, office.name, value: office.id) %>
+    <% end %>
+  <% end %>
+
+  <p>
+    <%= f.hidden_field :file_record_id, value: @file_record.id %>
+  </p>
+  
+  <p>
+    <%= f.submit %>
+  </p>
+ 
+<% end %>

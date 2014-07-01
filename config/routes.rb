@@ -1,20 +1,10 @@
 Rails.application.routes.draw do
-  get 'offices/index'
-  
-  get 'welcome/index'
-  
+
   root 'welcome#index'
-  
-  get 'people/index'
-  
-  get 'records/index'
-  
-  get 'file_records/index'
-  
   resources :file_records
   resources :offices
   resources :people
-  resources :records
+  resources :steps
   #get 'offices/index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
