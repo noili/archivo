@@ -1,0 +1,26 @@
+<%= form_for @file_record do |f| %>
+ 
+  <% if @file_record.errors.any? %>
+    <div id="error_explanation">
+      <h2>
+        <%= pluralize(@file_record.errors.count, "error") %> prohibited
+        this office from being saved:
+      </h2>
+      <ul>
+        <% @file_record.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+  
+  <p>
+    <%= f.submit %>
+  </p>
+ 
+<% end %>

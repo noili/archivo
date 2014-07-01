@@ -9,6 +9,9 @@ Rails.application.routes.draw do
   
   get 'records/index'
   
+  get 'file_records/index'
+  
+  resources :file_records
   resources :offices
   resources :people
   resources :records
