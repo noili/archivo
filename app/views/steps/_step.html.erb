@@ -1,0 +1,13 @@
+<h1>Listing steps</h1>
+ 
+<table>
+  <tr>
+    <th>step</th>
+  </tr>
+ 
+  <% @file_record.steps.each do |step| %>
+    <tr>
+      <td><%= step.office.name %></td>
+    </tr>
+  <% end %>
+</table>
