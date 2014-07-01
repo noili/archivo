@@ -1,7 +1,7 @@
 archivo
 =======
 
-
+###DONE:
 
 Hacer el CRUD para person, office, step, Record
 
@@ -26,8 +26,6 @@ belongs_to :office
 belongs_to :person
 belongs_to :office
 
-###TODO:
-
 Casos de Uso
 
 Mover un expediente
@@ -38,3 +36,9 @@ Mover un expediente
 
 select o combo box
 submit
+
+###TODO:
+
+Add person to step when created
+
+
