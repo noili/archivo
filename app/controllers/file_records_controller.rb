@@ -9,8 +9,9 @@ class FileRecordsController < ApplicationController
     @office = Office.where(name: "Mesa de Entrada").first!
 
     if @file_record.save
-      step = @file_record.steps.build office: @office
-      step.save!
+      #@file_record.save_step
+      #step = @file_record.steps.build office: @office
+      #step.save!
       redirect_to @file_record
     else
       render 'new'
