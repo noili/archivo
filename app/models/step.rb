@@ -10,8 +10,12 @@ class Step < ActiveRecord::Base
   end
   
   def self.archivate
-    office = Office.find_or_create_by name: 'Archivo'
-    step = step.new office
+    create office: Office.archive_office
+  end
+  
+  def first_step
+    self.office = Office.start_office
+    save
   end
   
 end

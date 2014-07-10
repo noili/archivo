@@ -1,9 +1,8 @@
 class FileRecord < ActiveRecord::Base
-  has_many :steps
+  has_many :steps, dependent: :destroy
   
   def archivate
-    step = Step.archivate
-    steps.create office: step.office
+    steps << Step.archivate
   end
   
   def save_step
@@ -11,14 +10,14 @@ class FileRecord < ActiveRecord::Base
     steps.create! office: office
   end
   
-  def create_step
-    office = Office.first!
-    steps.create office: office
+  def create_first_step
+    steps.build.first_step
   end
   
   def create
     step.start
   end
   
-  after_create :create_step
+  after_create :create_first_step
+  
 end
