@@ -15,7 +15,7 @@ class PeopleController < ApplicationController
   end
 
   def show
-    @person = Person.find(params[:id])
+    @person = Person.find params[:id]
   end
 
   def index
@@ -23,7 +23,7 @@ class PeopleController < ApplicationController
   end
 
   def edit
-    @person = Person.find(params[:id])
+    @person = Person.find params[:id]
   end
   
   def update
