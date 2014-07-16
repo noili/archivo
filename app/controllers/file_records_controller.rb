@@ -6,7 +6,6 @@ class FileRecordsController < ApplicationController
 
   def create
     @file_record = FileRecord.new file_record_params
-    @office = Office.where(name: "Mesa de Entrada").first!
 
     if @file_record.save
       redirect_to @file_record
@@ -36,6 +35,10 @@ class FileRecordsController < ApplicationController
     else
       render 'edit'
     end    
+  end
+  
+  def archivate
+  
   end
   
   def destroy
