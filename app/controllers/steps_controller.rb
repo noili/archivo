@@ -1,13 +1,11 @@
 class StepsController < ApplicationController
 
   def create
-    @step = Step.new step_params
-    
-    if @step.save
-      redirect_to @step.file_record
-    else
-      render 'new'
-    end
+    @file_record = FileRecord.find(params[:file_record_id])
+    #binding.pry
+    @file_record.steps.create(step_params)
+
+    redirect_to file_record_path(params[:file_record_id])
   end
   
   private
