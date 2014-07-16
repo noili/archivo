@@ -9,11 +9,12 @@
 </p>
 
 <h1>Step</h1>
-<pre><h1> Office: </h1></pre>
+<pre><h1> Office: Person:</h1></pre>
 
 <%= form_for([@file_record, @file_record.steps.build]) do |f| %>
   <p>
     <%= collection_select(:step, :office_id, Office.all, :id, :name) %>
+    <%= collection_select(:step, :person_id, Person.all, :id, :name) %>
   <p>
   <%= f.submit %>
   </p>
