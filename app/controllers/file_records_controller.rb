@@ -1,5 +1,7 @@
 class FileRecordsController < ApplicationController
 
+  before_action :authenticate_user!
+
   def new
     @file_record = FileRecord.new
   end
