@@ -9,8 +9,9 @@ class Step < ActiveRecord::Base
     step = step.new office
   end
   
-  def self.archivate
-    create office: Office.archive_office
+  def archivate
+    self.office = Office.archivate
+    save
   end
   
   def first_step

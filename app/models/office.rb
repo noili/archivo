@@ -6,6 +6,10 @@ class Office < ActiveRecord::Base
     Office.find_or_create_by name: 'Mesa de entrada'
   end
   
+  def self.archivate
+    Office.find_or_create_by name: 'Archivo'
+  end
+  
   validates :name, presence: true,
                     length: { minimum: 2 }
 end

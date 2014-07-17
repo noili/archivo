@@ -2,7 +2,8 @@ class FileRecord < ActiveRecord::Base
   has_many :steps, dependent: :destroy
   
   def archivate
-    steps << Step.archivate
+    #steps << Step.archivate
+    steps.build.archivate
   end
   
   def save_step
