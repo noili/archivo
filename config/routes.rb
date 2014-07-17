@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  devise_for :users
   root 'welcome#index'
   resources :file_records do
     resources :steps
