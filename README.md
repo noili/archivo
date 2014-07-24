@@ -39,8 +39,6 @@ submit
 
 ###TODO:
 
-Add person to step when created
-
-Read before_action
+add ransack, will_paginate
 
 
