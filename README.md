@@ -43,4 +43,11 @@ Add person to step when created
 
 Read before_action
 
+###Send:
+
+rails g rails_backend:install
+rails g rails_backend:register persons
+rails g rails_backend:register file_records
+rails g rails_backend:register offices
+
 
