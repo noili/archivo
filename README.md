@@ -37,8 +37,18 @@ Mover un expediente
 select o combo box
 submit
 
+rails g rails_backend:install
+
+rails g rails_backend:register persons
+
+rails g rails_backend:register file_records
+
+rails g rails_backend:register offices
+
 ###TODO:
 
 add ransack, will_paginate
+
+
 
 
