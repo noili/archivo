@@ -190,6 +190,7 @@ DEPENDENCIES
   ransack
   sass-rails (~> 4.0.3)
   sdoc (~> 0.4.0)
+  simple_form
   spring
   sqlite3
   turbolinks

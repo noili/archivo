@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
 
+  namespace :backend do resources :offices end
+  namespace :backend do resources :file_records end
+  namespace :backend do resources :persons end
   devise_for :users
   root 'welcome#index'
   resources :file_records do

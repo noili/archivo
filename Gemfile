@@ -50,3 +50,5 @@ gem 'will_paginate'
 gem 'ransack'
 
 gem 'less-rails-bootstrap'
+
+gem 'simple_form'
