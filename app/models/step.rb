@@ -1,13 +1,12 @@
 class Step < ActiveRecord::Base
+  
+  attr_accessor :email
 
   belongs_to :office
   belongs_to :person
   belongs_to :file_record
   
-  def self.start
-    office = Office.find_or_create_by name: 'Mesa de Entrada'
-    step = step.new office
-  end
+  before_create :save_person_by_email
   
   def archivate
     self.office = Office.archivate
@@ -23,4 +22,10 @@ class Step < ActiveRecord::Base
     save
   end
   
+  private
+  
+  def save_person_by_email
+    self.person = Person.find_or_create_by email: email if email
+  end
+
 end

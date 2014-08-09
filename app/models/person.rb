@@ -3,4 +3,9 @@ class Person < ActiveRecord::Base
   
   validates :name, presence: true, length: { minimum: 3 }
   validates :dni, presence: true, length: { minimum: 7 }
+  
+  def completed?
+    name && email && dni
+  end
+  
 end
