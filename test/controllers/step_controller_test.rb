@@ -4,10 +4,9 @@ class StepsControllerTest < ActionController::TestCase
 
   test 'When incomplete person redirect to edit' do
     file_record = file_records(:frejemplo)
-    step_hash = {person: people(:incompleto), file_record: file_record}
+    step_hash = {person: people(:incompleto)}
     step = Step.new step_hash
-    #post "file_records/#{file_record.id}/steps"#:create, step: step_hash
-    post :create
+    post :create, step: step_hash, file_record_id: file_record.id
     assert_redirected_to edit_person_path step.person
   end
   
