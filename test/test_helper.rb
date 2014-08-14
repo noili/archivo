@@ -16,5 +16,12 @@ class ActiveSupport::TestCase
 end
 
 class ActionController::TestCase
+
   include Devise::TestHelpers
+  include Warden::TestHelpers
+  warden.test_mode!
+  setup do
+    sign_in users :emmet
+  end
+
 end
