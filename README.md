@@ -45,9 +45,14 @@ rails g rails_backend:register file_records
 
 rails g rails_backend:register offices
 
+add ransack, will_paginate
+
 ###TODO:
 
-add ransack, will_paginate
+Test step recibe un email(string) y crea o agrega la persona con ese email.
+
+Cuando creo un nuevo Step con una persona inexistente tiene que redireccionar al
+edit de persona.
 
 
 
