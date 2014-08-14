@@ -2,10 +2,6 @@ require 'test_helper'
 
 class FileRecordsControllerTest < ActionController::TestCase
   
-  def setup
-    sign_in users :emmet
-  end
-  
   test 'debe existir el index' do
     #binding.pry
     get :index
