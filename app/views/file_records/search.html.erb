@@ -1,0 +1,17 @@
+<h1>Search</h1>
+ 
+<table>
+  <tr>
+    <th>file_record</th>
+  </tr>
+ 
+  <% @file_records.each do |file_record| %>
+    <tr>
+      <td><%= file_record.title %></td>
+      <td><%= link_to 'Show', file_record_path(file_record) %></td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Back', root_path %>
+<%= link_to 'New', new_file_record_path %>
