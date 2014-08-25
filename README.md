@@ -54,6 +54,13 @@ Test step recibe un email(string) y crea o agrega la persona con ese email.
 Cuando creo un nuevo Step con una persona inexistente tiene que redireccionar al
 edit de persona.
 
+Correct backend.
+
+Correct views and partials.
+
+Correct symbols routes.
+
+Do search view.
 
 
 
