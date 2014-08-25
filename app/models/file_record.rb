@@ -15,5 +15,9 @@ class FileRecord < ActiveRecord::Base
   def create_first_step
     steps.build.first_step
   end
+  
+  def self.search keyword
+    FileRecord.where("title like '%#{ keyword }%'")
+  end
 
 end

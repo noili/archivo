@@ -7,4 +7,9 @@ class FileRecordTest < ActiveSupport::TestCase
     assert file_record.steps.count == 1
   end
   
+  test 'search by keyword' do
+    file_records = FileRecord.search('procrear')
+    assert !file_records.empty?
+  end
+  
 end
