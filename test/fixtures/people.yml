@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 incompleto:
+  email: 'marty@mcfly.com'
   name: 'marty'
-  dni: '12345' 
 
 #two:
   #name: MyString
-  #dni: 
+  #dni:
