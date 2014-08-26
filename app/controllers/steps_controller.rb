@@ -2,7 +2,7 @@ class StepsController < ApplicationController
 
   def create
     @file_record = FileRecord.find(params[:file_record_id])
-    person = Person.find_by({email: params[:step][:email]})
+    person = Person.find_or_create_by({email: params[:step][:email]})
     if person.completed?
       @file_record.steps.create(step_params)
       redirect_to file_record_path(params[:file_record_id])
