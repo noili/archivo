@@ -4,9 +4,9 @@ class FileRecordsController < InheritedResources::Base
     @file_record = FileRecord.find(params[:file_record_id]).archivate
     redirect_to file_records_path
   end
-  
-  def search
-    @file_records = FileRecord.search(:search_keyword)
+
+  def index
+    @file_records = FileRecord.search(params[:q])
   end
 
   private
