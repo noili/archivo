@@ -8,8 +8,13 @@ class FileRecordTest < ActiveSupport::TestCase
   end
   
   test 'search by keyword' do
-    file_records = FileRecord.search('procrear')
+    file_records = FileRecord.search 'procrear'
     assert !file_records.empty?
+  end
+  
+  test 'search by office' do
+    file_records = FileRecord.search '', 'archivo'
+    assert file_records.size == 1 
   end
   
 end

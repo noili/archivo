@@ -14,9 +14,4 @@ class FileRecordsControllerTest < ActionController::TestCase
     assert_response :success
   end
   
-  test 'must exist view for search' do
-    get :search
-    assert_response :success
-  end
-  
 end
