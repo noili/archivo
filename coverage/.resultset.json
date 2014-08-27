@@ -1,0 +1,145 @@
+{
+  "MiniTest": {
+    "coverage": {
+      "/home/federico/projects/archivo/app/models/file_record.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/home/federico/projects/archivo/app/models/step.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/home/federico/projects/archivo/app/models/person.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ],
+      "/home/federico/projects/archivo/app/models/office.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/federico/projects/archivo/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/federico/projects/archivo/app/helpers/file_record_helper.rb": [
+        1,
+        null
+      ],
+      "/home/federico/projects/archivo/app/helpers/offices_helper.rb": [
+        1,
+        null
+      ],
+      "/home/federico/projects/archivo/app/helpers/people_helper.rb": [
+        1,
+        null
+      ],
+      "/home/federico/projects/archivo/app/helpers/persons_helper.rb": [
+        1,
+        null
+      ],
+      "/home/federico/projects/archivo/app/helpers/records_helper.rb": [
+        1,
+        null
+      ],
+      "/home/federico/projects/archivo/app/helpers/welcome_helper.rb": [
+        1,
+        null
+      ]
+    },
+    "timestamp": 1409102438
+  }
+}

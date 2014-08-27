@@ -2,6 +2,7 @@ archivo
 =======
 
 [![Code Climate](https://codeclimate.com/github/noili/archivo/badges/gpa.svg)](https://codeclimate.com/github/noili/archivo)
+[![Test Coverage](https://codeclimate.com/github/noili/archivo/badges/coverage.svg)](https://codeclimate.com/github/noili/archivo)
 
 ###DONE:
 
@@ -54,15 +55,15 @@ Test step recibe un email(string) y crea o agrega la persona con ese email.
 Cuando creo un nuevo Step con una persona inexistente tiene que redireccionar al
 edit de persona.
 
+Do search view.
+
 ###TODO:
 
-Correct backend.
+Correct backend. (Not yet)
 
 Correct views and partials.
 
 Correct symbols routes.
-
-Do search view.
 
 
 

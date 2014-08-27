@@ -52,3 +52,6 @@ gem 'ransack'
 gem 'less-rails-bootstrap'
 
 gem 'simple_form'
+
+gem "codeclimate-test-reporter", group: :test, require: nil
+
